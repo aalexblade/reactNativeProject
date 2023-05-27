@@ -28,6 +28,7 @@ export default function LoginScreen() {
   const keyboardHide = () => {
     setIsShowKeyboard(false);
     Keyboard.dismiss();
+    setState(initialState);
   };
 
   const onSubmitForm = () => {

@@ -15,8 +15,7 @@ export default function App() {
     "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
   });
 
-  // const AuthStack = createNativeStackNavigator();
-
+ 
   if (!fontsLoaded) {
     return null;
   }
