@@ -22,9 +22,10 @@ const initialState = {
   login: "",
   email: "",
   password: "",
+  avatar: "",
 };
 
-export default function RegistrationScreen() {
+export default function RegistrationScreen({navigation}) {
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [state, setState] = useState(initialState);
   const [hoverInputLogin, setHoverInputLogin] = useState(false);

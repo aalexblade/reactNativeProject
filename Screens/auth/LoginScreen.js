@@ -9,7 +9,8 @@ import {
   View,
   ImageBackground,
   Text,
-  TextInput
+  TextInput,
+  
 } from "react-native";
 
 const initialState = {
@@ -17,7 +18,7 @@ const initialState = {
   password: "",
 };
 
-export default function LoginScreen() {
+export default function LoginScreen({navigation}) {
   const [state, setState] = useState(initialState);
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [hoverInputEmail, setHoverInputEmail] = useState(false);
@@ -109,6 +110,7 @@ export default function LoginScreen() {
                 <Text style={styles.btnText}>Увійти</Text>
               </TouchableOpacity>
 
+           
               <TouchableOpacity onPress={() => navigation.navigate("Registration")}>
               <Text style={styles.question}>Немає акаунта? Зареєструватися</Text>
               </TouchableOpacity>
