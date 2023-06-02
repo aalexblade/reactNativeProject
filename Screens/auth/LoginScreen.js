@@ -18,7 +18,7 @@ const initialState = {
   password: "",
 };
 
-export default function LoginScreen({navigation}) {
+export default function LoginScreen({ navigation }) {
   const [state, setState] = useState(initialState);
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [hoverInputEmail, setHoverInputEmail] = useState(false);

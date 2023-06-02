@@ -4,19 +4,19 @@ import * as React from 'react';
 
 import { NavigationContainer } from "@react-navigation/native";
 import { useCallback } from 'react/cjs/react.development';
-import { useRoute } from './router';
 import { useFonts } from 'expo-font';
+import { useRoute } from './router';
 
 
 export default function App() {
-  const routing = useRoute(false);
+
+  const routing = useRoute(true);
 
   const [customFonts] = useFonts({
     "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
     "Roboto-Medium": require("./assets/fonts/Roboto-Medium.ttf"),
     "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
   });
-
  
    const onLayoutRootView = useCallback(async () => {
     if (customFonts) {

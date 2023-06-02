@@ -25,7 +25,7 @@ const initialState = {
   avatar: "",
 };
 
-export default function RegistrationScreen({navigation}) {
+export default function RegistrationScreen({ navigation }) {
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [state, setState] = useState(initialState);
   const [hoverInputLogin, setHoverInputLogin] = useState(false);
